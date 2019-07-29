@@ -1,0 +1,46 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#FFCCCC), to(#CCFFFF));
+  background: linear-gradient(90deg, #FFCCCC, #CCFFFF);
+}
+
+.container {
+  font-size: 40px;
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+      grid-template-areas: "header header header header header" ". content content content ." ". content content content ." ". content content content ." "footer footer footer footer footer";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.info-box {
+  width: 30vh;
+  font-family: 'roboto condensed', cursive;
+  border: solid 5px #CCFFFF;
+  padding: 4vh;
+  background: white;
+  -webkit-box-shadow: -5px 7px 20px #888888;
+          box-shadow: -5px 7px 20px #888888;
+  border-radius: 0%;
+  text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: content;
+}
+
+.info-text {
+  font-size: 3vh;
+}
+/*# sourceMappingURL=questions.css.map */
